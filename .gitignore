@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+BackEnd/node_modules/
+FrontEnd/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime and temp files
+*.pid
+*.pid.lock
+tmp/
+temp/
+*.tmp
+
+# Build artifacts and coverage
+dist/
+build/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Tool and package manager cache
+.cache/
+.parcel-cache/
+.npm/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

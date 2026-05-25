@@ -229,3 +229,26 @@ http://localhost:3002/pages/cadastro.html
 5. Criar login com JWT
 6. Criar uma rota GET /usuarios para treino
 7. Criar testes simples para cadastro e login
+
+## Refatoracao de versionamento (.gitignore)
+
+Tambem foi aplicada uma refatoracao no controle de arquivos versionados com a criacao do arquivo `.gitignore` na raiz do projeto.
+
+Objetivo principal:
+
+- evitar versionar dependencias instaladas (`node_modules`);
+- evitar expor dados sensiveis de ambiente (`.env`);
+- reduzir ruido no Git com logs, caches e arquivos temporarios;
+- manter o repositorio mais limpo, leve e facil de manter.
+
+Padroes adicionados no `.gitignore`:
+
+- dependencias Node (`node_modules/`);
+- variaveis de ambiente (`.env`, `.env.*`);
+- logs de execucao (`*.log`, `npm-debug.log*`, etc.);
+- artefatos de build e cobertura (`dist/`, `build/`, `coverage/`);
+- arquivos de IDE e sistema (`.vscode/`, `.idea/`, `.DS_Store`, `Thumbs.db`).
+
+Importante:
+
+Se `node_modules` ja estava rastreado antes, o `.gitignore` impede novos arquivos, mas nao remove automaticamente os que ja estao no historico do Git.
