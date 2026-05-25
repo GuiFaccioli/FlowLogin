@@ -11,6 +11,7 @@ FlowLogin was built to practice core concepts of a full-stack web application, i
 - user registration and login flow;
 - integration between front end, back end, and database;
 - consuming a custom API with `fetch`;
+xxx
 - creating routes with Express;
 - validating data on both the front end and back end;
 - persisting users with MySQL;
